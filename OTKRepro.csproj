@@ -1,24 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net48</TargetFramework>
-		<LangVersion>10.0</LangVersion>
-		<Nullable>enable</Nullable>
-		<PlatformTarget>AnyCPU</PlatformTarget>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>portable</DebugType>
 		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<PlatformTarget>AnyCPU</PlatformTarget>
 		<Optimize>false</Optimize>
-		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<OutputType>Exe</OutputType>
+		<TargetFramework>net48</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
 		<Reference Include="System.Windows.Forms" />
 		<PackageReference Include="OpenTK" Version="3.3.2" PrivateAssets="all" />
-		<PackageReference Include="OpenTK.GLControl" Version="3.1.0" PrivateAssets="all" />
-<!--
-		<PackageReference Include="OpenTK" Version="3.3.3" PrivateAssets="all" />
-		<PackageReference Include="OpenTK.GLControl" Version="3.3.3" PrivateAssets="all" />
--->
 	</ItemGroup>
 </Project>
