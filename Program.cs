@@ -6,7 +6,10 @@ using System.Threading;
 using OpenTK.Input;
 
 static void InitGamepads() {
-	for (var i = 0; i < 4; i++) _ = GamePad.GetState(i);
+	for (var i = 0; i < 4; i++) {
+		Console.WriteLine(Joystick.GetGuid(i));
+		_ = GamePad.GetState(i);
+	}
 }
 
 static void PrintState() {
